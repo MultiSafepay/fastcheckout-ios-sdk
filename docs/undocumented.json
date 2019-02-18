@@ -1,0 +1,271 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutComponentsKit/Common/Views/PagedSlider.swift",
+      "line": null,
+      "symbol": "PagedSliderDelegate",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Analytics/Analytics.swift",
+      "line": 56,
+      "symbol": "AnalyticsEvent.init(type:name:parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Analytics/Analytics.swift",
+      "line": 79,
+      "symbol": "ErrorAnalyticsEvent.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Analytics/Analytics.swift",
+      "line": 83,
+      "symbol": "ErrorAnalyticsEvent.init(type:reason:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/CreditcardType.swift",
+      "line": 11,
+      "symbol": "CardType",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/CreditcardType.swift",
+      "line": 13,
+      "symbol": "CreditcardType",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/CreditcardType.swift",
+      "line": 14,
+      "symbol": "CreditcardType.number",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/CreditcardType.swift",
+      "line": 15,
+      "symbol": "CreditcardType.expiryDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/DebitcardType.swift",
+      "line": 11,
+      "symbol": "DebitcardType",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/DebitcardType.swift",
+      "line": 12,
+      "symbol": "DebitcardType.iban",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/FastcheckoutClient.swift",
+      "line": 205,
+      "symbol": "Environment.baseURL()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/FastcheckoutClient.swift",
+      "line": 209,
+      "symbol": "Environment.host",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/PayAfterDeliveryType.swift",
+      "line": 11,
+      "symbol": "PayAfterDeliveryType",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/PayAfterDeliveryType.swift",
+      "line": 12,
+      "symbol": "PayAfterDeliveryType.birthdate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/PaymentMethod.swift",
+      "line": 11,
+      "symbol": "PaymentMethod",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/PaymentMethod.swift",
+      "line": 12,
+      "symbol": "PaymentMethod.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/PaymentMethod.swift",
+      "line": 13,
+      "symbol": "PaymentMethod.holder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/PaymentMethod.swift",
+      "line": 14,
+      "symbol": "PaymentMethod.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/PaymentMethod.swift",
+      "line": 15,
+      "symbol": "PaymentMethod.style",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/PaymentMethodCardStyle.swift",
+      "line": 11,
+      "symbol": "PaymentMethodCardStyle",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/UserSession.swift",
+      "line": 312,
+      "symbol": "UserSession.wishlist(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/UserSession.swift",
+      "line": 328,
+      "symbol": "UserSession.setWishlist(_:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
+      "line": 11,
+      "symbol": "Wish",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
+      "line": 12,
+      "symbol": "Wish.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
+      "line": 13,
+      "symbol": "Wish.siteId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
+      "line": 14,
+      "symbol": "Wish.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
+      "line": 15,
+      "symbol": "Wish.desc",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
+      "line": 16,
+      "symbol": "Wish.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
+      "line": 17,
+      "symbol": "Wish.imageURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
+      "line": 28,
+      "symbol": "Wish.init(id:siteId:name:desc:url:imageURL:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/User.swift",
+      "line": null,
+      "symbol": "User",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/User.swift",
+      "line": 13,
+      "symbol": "RawRepresentable.hashValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Networking/CancellablePromise.swift",
+      "line": 12,
+      "symbol": "CancelClosure",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Networking/FastcheckoutRouter.swift",
+      "line": null,
+      "symbol": "FastcheckoutRouter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Networking/Router.swift",
+      "line": null,
+      "symbol": "Router",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutKit/Common/Models/FastcheckoutManager.swift",
+      "line": 34,
+      "symbol": "CompletionCallback",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutKit/Common/Models/FastcheckoutManager.swift",
+      "line": 183,
+      "symbol": "FastcheckoutManager.setAnalyticsDelegate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutKit/Scenes/Payment/PaymentModel.swift",
+      "line": null,
+      "symbol": "PaymentModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios"
+}
