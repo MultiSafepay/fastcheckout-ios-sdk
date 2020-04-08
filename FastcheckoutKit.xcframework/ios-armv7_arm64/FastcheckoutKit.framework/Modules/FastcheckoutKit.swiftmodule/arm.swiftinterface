@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)
+// swift-compiler-version: Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)
 // swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FastcheckoutKit
 @_exported import FastcheckoutKit
 import Foundation
@@ -9,14 +9,14 @@ import Security
 import Swift
 import UIKit
 import WebKit
-@objc(FCOMerchantDetails) final public class MerchantDetails : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOMerchantDetails) final public class MerchantDetails : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let name: Swift.String
   @objc final public let site: FastcheckoutKit.Site
   @objc final public let email: Swift.String?
   @objc final public let phone: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension MerchantDetails : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
@@ -53,29 +53,29 @@ extension MerchantDetails : Swift.Decodable {
   @objc final public let parameters: [Swift.String : Swift.AnyObject]?
   @objc public init(type: FastcheckoutKit.AnalyticsEventType, name: Swift.String, parameters: [Swift.String : Swift.AnyObject]?)
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc(FCOErrorAnalyticsEvent) final public class ErrorAnalyticsEvent : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let type: FastcheckoutKit.ErrorAnalyticsEventType
   @objc final public let reason: Swift.String
   @objc public init(type: FastcheckoutKit.ErrorAnalyticsEventType, reason: Swift.String)
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc(FCOAnalyticsDelegate) public protocol AnalyticsDelegate : AnyObject {
   @objc func fastcheckoutDidTrackAnalyticsEvent(_ event: FastcheckoutKit.AnalyticsEvent)
   @objc func fastcheckoutDidTrackErrorAnalyticsEvent(_ event: FastcheckoutKit.ErrorAnalyticsEvent)
 }
-@objc(FCOStatus) final public class Status : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOStatus) final public class Status : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let success: Swift.Bool
   @objc final public let state: FastcheckoutKit.FCOTransactionState
   @objc final public let message: Swift.String
   @objc final public let transactionId: Swift.String
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc(FCOColors) final public class Colors : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let primaryColor: UIKit.UIColor
@@ -85,20 +85,20 @@ extension MerchantDetails : Swift.Decodable {
   @objc final public let backgroundColor: UIKit.UIColor
   @objc public init(primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor, primaryTextColor: UIKit.UIColor, secondaryTextColor: UIKit.UIColor, backgroundColor: UIKit.UIColor)
   @objc final public func copy(with zone: ObjectiveC.NSZone?) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
-@objc(FCODeviceInfo) final public class DeviceInfo : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCODeviceInfo) final public class DeviceInfo : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let token: Swift.String
   @objc final public let os: Swift.String
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc(FCOUserSessionDelegate) public protocol UserSessionDelegate : AnyObject {
   @objc func userSession(_ userSession: FastcheckoutKit.UserSession, didChangeLoginStatus isUserLoggedIn: Swift.Bool)
 }
-@objc(FCOUserSession) final public class UserSession : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc(FCOUserSession) final public class UserSession : ObjectiveC.NSObject {
   @objc weak final public var delegate: FastcheckoutKit.UserSessionDelegate?
   @objc final public var isUserLoggedIn: Swift.Bool {
     @objc get
@@ -141,24 +141,24 @@ extension MerchantDetails : Swift.Decodable {
   @objc final public func deletePaymentMethod(id: Swift.String, completion: @escaping ([FastcheckoutKit.PaymentMethod]?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @objc override dynamic public init()
 }
-@objc(FCOBalance) final public class Balance : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOBalance) final public class Balance : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let amount: Swift.String
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension Balance : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
-@objc(FCOOrderItem) final public class OrderItem : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc(FCOOrderItem) final public class OrderItem : ObjectiveC.NSObject {
   @objc final public let name: Swift.String
   @objc final public let comment: Swift.String
   @objc final public let price: Swift.String
   @objc final public let quantity: Swift.String
   @objc final public let image: Foundation.URL?
   @objc final public let url: Foundation.URL?
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension OrderItem : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
@@ -173,12 +173,12 @@ extension OrderItem : Swift.Decodable {
   @objc final public let imageURL: Foundation.URL?
   @objc public init(id: Swift.String, siteId: Swift.String, appId: Swift.String, name: Swift.String, desc: Swift.String?, url: Foundation.URL, imageURL: Foundation.URL?)
   public init(from decoder: Swift.Decoder) throws
-  @objc override dynamic public init()
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init()
+  final public func encode(to encoder: Swift.Encoder) throws
 }
 public typealias CancelClosure = () -> Swift.Void
-@objc(FCODebitcardType) final public class DebitcardType : FastcheckoutKit.CardType {
+@_hasMissingDesignatedInitializers @objc(FCODebitcardType) final public class DebitcardType : FastcheckoutKit.CardType {
   @objc final public let iban: Swift.String
   @objc override dynamic public init()
   @objc deinit
@@ -188,7 +188,7 @@ extension RawRepresentable where Self.RawValue : Swift.Hashable {
     get
   }
 }
-@objc(FCOPaymentMethod) final public class PaymentMethod : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc(FCOPaymentMethod) final public class PaymentMethod : ObjectiveC.NSObject {
   @objc final public let id: Swift.String
   @objc final public let holder: Swift.String
   @objc final public let type: FastcheckoutKit.CardType
@@ -196,7 +196,7 @@ extension RawRepresentable where Self.RawValue : Swift.Hashable {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc(FCOShippingAddress) final public class ShippingAddress : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOShippingAddress) final public class ShippingAddress : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let id: Swift.String
   @objc final public let firstName: Swift.String
   @objc final public let lastName: Swift.String
@@ -211,8 +211,8 @@ extension RawRepresentable where Self.RawValue : Swift.Hashable {
   @objc final public let image: Foundation.URL?
   @objc final public let alias: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension ShippingAddress : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
@@ -246,13 +246,13 @@ extension ShippingAddress : Swift.Decodable {
   @objc final public let shipping: FastcheckoutKit.ShippingStatus
   @objc public init(type: FastcheckoutKit.ConsumerStatus, shipping: FastcheckoutKit.ShippingStatus)
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension OrderStatus : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
-@objc(FCOOrderDetails) final public class OrderDetails : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOOrderDetails) final public class OrderDetails : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let id: Swift.String
   @objc final public let orderId: Swift.String
   @objc final public let date: Foundation.Date
@@ -266,13 +266,13 @@ extension OrderStatus : Swift.Decodable {
   @objc final public let total: Swift.String
   @objc final public let cashback: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension OrderDetails : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
-@objc(FCOPaymentMethodCardStyle) final public class PaymentMethodCardStyle : ObjectiveC.NSObject, Swift.Decodable {
+@_hasMissingDesignatedInitializers @objc(FCOPaymentMethodCardStyle) final public class PaymentMethodCardStyle : ObjectiveC.NSObject, Swift.Decodable {
   @objc final public let image: Foundation.URL?
   @objc final public let color: UIKit.UIColor
   @objc final public let textColor: UIKit.UIColor
@@ -343,53 +343,53 @@ final public class Promise<Value> {
   }
   @objc deinit
 }
-@objc(FCOSite) final public class Site : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOSite) final public class Site : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let name: Swift.String
   @objc final public let url: Foundation.URL
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension Site : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
-@objc(FCOShippingDetails) final public class ShippingDetails : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOShippingDetails) final public class ShippingDetails : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let address: Swift.String
   @objc final public let carrier: Swift.String?
   @objc final public let date: Foundation.Date?
   @objc final public let trackingId: Swift.String?
   @objc final public let comment: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension ShippingDetails : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
-@objc(FCOReferrerDetails) final public class ReferrerDetails : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOReferrerDetails) final public class ReferrerDetails : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let id: Swift.String
   @objc final public let email: Swift.String
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension ReferrerDetails : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
-@objc(FCOMessage) final public class Message : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOMessage) final public class Message : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let id: Swift.String
   @objc final public let createdAt: Foundation.Date
   @objc final public let subject: Swift.String
   @objc final public let readAt: Foundation.Date?
   @objc final public let transactionId: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension Message : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
-@objc(FCOMessageDetails) final public class MessageDetails : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOMessageDetails) final public class MessageDetails : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let id: Swift.String
   @objc final public let parentId: Swift.String
   @objc final public let createdAt: Foundation.Date
@@ -401,49 +401,49 @@ extension Message : Swift.Decodable {
   @objc final public let relatedOrder: FastcheckoutKit.Order?
   @objc final public let canReply: Swift.Bool
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension MessageDetails : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
-@objc(FCOOrder) final public class Order : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOOrder) final public class Order : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let id: Swift.String
   @objc final public let date: Foundation.Date
   @objc final public let site: Swift.String
   @objc final public let amount: Swift.String
   @objc final public let newTransactionId: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension Order : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
-@objc(FCOCardType) public class CardType : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(FCOCardType) public class CardType : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc(FCOCreditcardType) final public class CreditcardType : FastcheckoutKit.CardType {
+@_hasMissingDesignatedInitializers @objc(FCOCreditcardType) final public class CreditcardType : FastcheckoutKit.CardType {
   @objc final public let number: Swift.String
   @objc final public let expiryDate: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
-@objc(FCOPayAfterDeliveryType) final public class PayAfterDeliveryType : FastcheckoutKit.CardType {
+@_hasMissingDesignatedInitializers @objc(FCOPayAfterDeliveryType) final public class PayAfterDeliveryType : FastcheckoutKit.CardType {
   @objc final public let birthdate: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
-@objc(FCOInvitation) final public class Invitation : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOInvitation) final public class Invitation : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let title: Swift.String
   @objc final public let subtitle: Swift.String
   @objc final public let body: Swift.String
   @objc final public let subject: Swift.String
   @objc final public let link: Foundation.URL
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension Invitation : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
@@ -462,8 +462,8 @@ extension Invitation : Swift.Decodable {
   @objc public init(environment: Swift.String, debug: Swift.Bool, biometricAuthenticationEnabled: Swift.Bool, persistUserSession: Swift.Bool, skipShowCartAtBeginning: Swift.Bool, pinning: Swift.Bool)
   @objc public static func build() -> FastcheckoutKit.Settings
   @objc final public func copy(with zone: ObjectiveC.NSZone?) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc(FCOShippingAddressesDelegate) public protocol ShippingAddressesDelegate : AnyObject {
   @objc func fastcheckoutDidAddAddress()
@@ -578,7 +578,7 @@ public enum Environment : Swift.Int {
     get
   }
 }
-@objc(FCOUserInfo) final public class UserInfo : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOUserInfo) final public class UserInfo : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let name: Swift.String
   @objc final public let email: Swift.String
   @objc final public let id: Swift.String
@@ -589,7 +589,7 @@ public enum Environment : Swift.Int {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc(FCOOrderSummary) final public class OrderSummary : ObjectiveC.NSObject, Foundation.NSCopying {
+@_hasMissingDesignatedInitializers @objc(FCOOrderSummary) final public class OrderSummary : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let id: Swift.String
   @objc final public let date: Foundation.Date
   @objc final public let site: Swift.String
@@ -597,8 +597,8 @@ public enum Environment : Swift.Int {
   @objc final public let newTransactionId: Swift.String?
   @objc final public let status: FastcheckoutKit.OrderStatus
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension OrderSummary : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "FastcheckoutKit"
-  s.version          = "1.1.0"
+  s.version          = "1.2.6"
   s.summary          = "Fastcheckout iOS SDK"
   s.homepage         = "https://bitbucket.multisafepay.com/scm/msdk/sdk-ios.git"
     s.license        = { :type => 'Copyright (c) 2019 MultiSafepay', :file => "LICENSE"}

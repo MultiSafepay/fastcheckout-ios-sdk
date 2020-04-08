@@ -1,0 +1,11 @@
+framework module FastcheckoutKit {
+  umbrella header "FastcheckoutKit.h"
+
+  export *
+  module * { export * }
+}
+
+module FastcheckoutKit.Swift {
+    header "FastcheckoutKit-Swift.h"
+    requires objc
+}

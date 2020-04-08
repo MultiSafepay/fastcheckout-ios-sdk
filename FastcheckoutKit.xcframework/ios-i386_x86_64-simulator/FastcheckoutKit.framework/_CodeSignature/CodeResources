@@ -6,35 +6,27 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		GVwIL2HcgIcG3gON8H3lfOIOOS0=
+		M4HbxQPAdVvc04mQwoJiN9uujrk=
 		</data>
-		<key>CommonEmptyHeaderView.nib/objects-13.0+.nib</key>
+		<key>CommonEmptyHeaderView.nib</key>
 		<data>
-		7adpaeeSQbIHvpdIEgtd2HmyNz0=
+		Whxei0ZlcY/sCmcFaw4zPUwf1W8=
 		</data>
-		<key>CommonEmptyHeaderView.nib/runtime.nib</key>
+		<key>CustomFieldGroupCell.nib</key>
 		<data>
-		d6HnAG0q8P7KkvKx1c+E8RAddt0=
-		</data>
-		<key>CustomFieldGroupCell.nib/objects-13.0+.nib</key>
-		<data>
-		85ktbbPjZruwDqFy8tw51pP2ZTY=
-		</data>
-		<key>CustomFieldGroupCell.nib/runtime.nib</key>
-		<data>
-		06H74BajfeCZFJhoEDMwmXNTC6A=
+		kx27czKHg5/tmBJVICHKEtIAQ+Q=
 		</data>
 		<key>FastcheckoutCoreKit.strings</key>
 		<data>
-		OsHGGgFT8N9J3BDioN2QB46gaNg=
+		TECG1PAVU5Pvve+3zFCmpRmDdrg=
 		</data>
 		<key>FastcheckoutKit.podspec</key>
 		<data>
-		c17W2nE3voP/tq/tQ4X0TVhl/lA=
+		10pr2mTwDg+w6P6DmbqIVAmrhIA=
 		</data>
 		<key>Headers/FastcheckoutKit-Swift.h</key>
 		<data>
-		haQAKjD0j6ep3DBT1asooLiDKSE=
+		yf/fghdjVBLS0aP/1lQcuJK5Wec=
 		</data>
 		<key>Headers/FastcheckoutKit.h</key>
 		<data>
@@ -42,55 +34,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XryL1nw0vWrD1So32fthF9URKQA=
+		XygxJM95gcqicDZlN7PigYBYiqU=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0W4H6qOCcH4B8O/FOWawoexhHkk=
+		enTjP4RI63//h7u/hZfLJW85R/I=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Nz6C8BaR4O0tvw80DdIW6D6A7Lg=
+		UHobDrBgc7DLFwXLrtG+Jgysb/8=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FHYKL140vQDyByCUvPKCvnxFt04=
+		cR0xI/obbJNDPZQj22t/fvKb+Ks=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386.swiftdoc</key>
 		<data>
-		0W4H6qOCcH4B8O/FOWawoexhHkk=
+		enTjP4RI63//h7u/hZfLJW85R/I=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386.swiftinterface</key>
 		<data>
-		Nz6C8BaR4O0tvw80DdIW6D6A7Lg=
+		UHobDrBgc7DLFwXLrtG+Jgysb/8=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		FHYKL140vQDyByCUvPKCvnxFt04=
+		cR0xI/obbJNDPZQj22t/fvKb+Ks=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dgsU7qGYA8l2tkPqKjyXkCgn3E4=
+		pxa/l/D/Xz6nDVcEI3hRxI+Db70=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5bNGnYj6PsP4DoM/Q1JrVnrc15Y=
+		qJrq6a01/OOamuqRvpE7271XxE8=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		l/Hh+qA3S6aqlmAVwfmHEZklDjg=
+		RRzX84bAaD9rF0bwB5KbUrF+9F0=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		dgsU7qGYA8l2tkPqKjyXkCgn3E4=
+		pxa/l/D/Xz6nDVcEI3hRxI+Db70=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		5bNGnYj6PsP4DoM/Q1JrVnrc15Y=
+		qJrq6a01/OOamuqRvpE7271XxE8=
 		</data>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		l/Hh+qA3S6aqlmAVwfmHEZklDjg=
+		RRzX84bAaD9rF0bwB5KbUrF+9F0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,11 +90,15 @@
 		</data>
 		<key>devmsp.cer</key>
 		<data>
-		AB+U/j8Kp1+EkWfu237c6o6xdgM=
+		tDkAMXpqGC5fnYohkaVFRBiMNX8=
 		</data>
 		<key>msp.cer</key>
 		<data>
 		8z7nuaj2V+MiRCZRu1vhDLO5jro=
+		</data>
+		<key>msp2.cer</key>
+		<data>
+		PxdXWItiuN8rIbGfI58eTPMUyHs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -111,88 +107,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GVwIL2HcgIcG3gON8H3lfOIOOS0=
+			M4HbxQPAdVvc04mQwoJiN9uujrk=
 			</data>
 			<key>hash2</key>
 			<data>
-			/7rDBZo4bxvHJDvBOYJxb56f0LpC5g/96GIkC3W9WdM=
+			vV+7QgLKuGCnqSdot4AVgK34Ojp+G4hER9Cn30cnTPU=
 			</data>
 		</dict>
-		<key>CommonEmptyHeaderView.nib/objects-13.0+.nib</key>
+		<key>CommonEmptyHeaderView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7adpaeeSQbIHvpdIEgtd2HmyNz0=
+			Whxei0ZlcY/sCmcFaw4zPUwf1W8=
 			</data>
 			<key>hash2</key>
 			<data>
-			KriAwpQ1WfT0QTPmkfqeZ0kmC5OsG3BBe9ZjWyKD1xs=
+			hyT9CIeWiENFZfSpQqEJkQUDSAkDikJu8U6W1bnZ5lc=
 			</data>
 		</dict>
-		<key>CommonEmptyHeaderView.nib/runtime.nib</key>
+		<key>CustomFieldGroupCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d6HnAG0q8P7KkvKx1c+E8RAddt0=
+			kx27czKHg5/tmBJVICHKEtIAQ+Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			b/sCWwrjpPsTYwildgF+muFmPt9lILTSysnmwJOaDh4=
-			</data>
-		</dict>
-		<key>CustomFieldGroupCell.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			85ktbbPjZruwDqFy8tw51pP2ZTY=
-			</data>
-			<key>hash2</key>
-			<data>
-			0sl18ga3xIO0ZiGZHz42mpjHc3udUOfDMhvYYP5wdwE=
-			</data>
-		</dict>
-		<key>CustomFieldGroupCell.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			06H74BajfeCZFJhoEDMwmXNTC6A=
-			</data>
-			<key>hash2</key>
-			<data>
-			PbEVyTCH1ECPDxZIzRX6LUyvagFUX9Pat3Lpl6ksEq4=
+			BB0Zg24kLZZoWtshAytcFdj/BE3HgdvjvqYPxSU1T0M=
 			</data>
 		</dict>
 		<key>FastcheckoutCoreKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OsHGGgFT8N9J3BDioN2QB46gaNg=
+			TECG1PAVU5Pvve+3zFCmpRmDdrg=
 			</data>
 			<key>hash2</key>
 			<data>
-			O9nAiSRZOY5Dd5wHBKYPA2i5+/wcCY6Vd3uBKJsCLPM=
+			hOB6MT9ePV3WeOrPfWfJZ6IZgxFcVRXF2EjgqXmgf24=
 			</data>
 		</dict>
 		<key>FastcheckoutKit.podspec</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			c17W2nE3voP/tq/tQ4X0TVhl/lA=
+			10pr2mTwDg+w6P6DmbqIVAmrhIA=
 			</data>
 			<key>hash2</key>
 			<data>
-			p/6G28HLPy2PkehBGcUXx0eOUB9DiGMkQ7zjBTuzoig=
+			Qnytfp3EqnOy20e02zs2WFYSHN3hwf9aGH74XVpAgOE=
 			</data>
 		</dict>
 		<key>Headers/FastcheckoutKit-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			haQAKjD0j6ep3DBT1asooLiDKSE=
+			yf/fghdjVBLS0aP/1lQcuJK5Wec=
 			</data>
 			<key>hash2</key>
 			<data>
-			TOmbgUiWwjyf80Vy2sITjV8NwB65BSwRhghw+5yqvI8=
+			iMM7bIP6QbwAsExGBHdAdlG3ID/FVzxgLajJAk8Jwa8=
 			</data>
 		</dict>
 		<key>Headers/FastcheckoutKit.h</key>
@@ -210,132 +184,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0W4H6qOCcH4B8O/FOWawoexhHkk=
+			enTjP4RI63//h7u/hZfLJW85R/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			LAJoM8wxlgbSsOGo+bQHDpDXpz2IEthL8CiSwelQIXo=
+			OEyPz+MHH2LitpX5mPvHFp2vLKIaqtEERw+D5twUaKE=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Nz6C8BaR4O0tvw80DdIW6D6A7Lg=
+			UHobDrBgc7DLFwXLrtG+Jgysb/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			WPwlD8DSuQSd9PocsL2TQpqAwAwNvmxeGU90+RUPII4=
+			QZi3HlbP47UwJnPZxUvzcdMjztqaS8ugOP4FFJvTzII=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FHYKL140vQDyByCUvPKCvnxFt04=
+			cR0xI/obbJNDPZQj22t/fvKb+Ks=
 			</data>
 			<key>hash2</key>
 			<data>
-			DKNpqeX+QOh7nCSNcZj69S1XmElsJfE4uq7m3PwziZ8=
+			gHaqNnjPrLVdV8tFwx8eqO81gzaZeuQXIJtuO9hpTkY=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0W4H6qOCcH4B8O/FOWawoexhHkk=
+			enTjP4RI63//h7u/hZfLJW85R/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			LAJoM8wxlgbSsOGo+bQHDpDXpz2IEthL8CiSwelQIXo=
+			OEyPz+MHH2LitpX5mPvHFp2vLKIaqtEERw+D5twUaKE=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Nz6C8BaR4O0tvw80DdIW6D6A7Lg=
+			UHobDrBgc7DLFwXLrtG+Jgysb/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			WPwlD8DSuQSd9PocsL2TQpqAwAwNvmxeGU90+RUPII4=
+			QZi3HlbP47UwJnPZxUvzcdMjztqaS8ugOP4FFJvTzII=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FHYKL140vQDyByCUvPKCvnxFt04=
+			cR0xI/obbJNDPZQj22t/fvKb+Ks=
 			</data>
 			<key>hash2</key>
 			<data>
-			DKNpqeX+QOh7nCSNcZj69S1XmElsJfE4uq7m3PwziZ8=
+			gHaqNnjPrLVdV8tFwx8eqO81gzaZeuQXIJtuO9hpTkY=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dgsU7qGYA8l2tkPqKjyXkCgn3E4=
+			pxa/l/D/Xz6nDVcEI3hRxI+Db70=
 			</data>
 			<key>hash2</key>
 			<data>
-			KS1s5hnj4jqavi6kBZrnshviuPI0dmy3w9OxZJe8QqQ=
+			gmeaoI/y33EwTnJWG9FYcEvPVxpbSdaIRJpoXvN2dYo=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5bNGnYj6PsP4DoM/Q1JrVnrc15Y=
+			qJrq6a01/OOamuqRvpE7271XxE8=
 			</data>
 			<key>hash2</key>
 			<data>
-			PxekmM0KI1VlxZnQmsLFBj5o7WXlI5cHKixtff2kSyE=
+			+qJkL3k7GDGLMOgjKwRmW6sOedk9S98GacUP9ZOA8qk=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l/Hh+qA3S6aqlmAVwfmHEZklDjg=
+			RRzX84bAaD9rF0bwB5KbUrF+9F0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6nh93RUZn2toPI7BW8iPydHD7KpDF+Wz90dWFvP/51o=
+			FZEeyqeqr9Q3woIgDevIOnMK+X4iI4HQm/9o2q1D0kw=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dgsU7qGYA8l2tkPqKjyXkCgn3E4=
+			pxa/l/D/Xz6nDVcEI3hRxI+Db70=
 			</data>
 			<key>hash2</key>
 			<data>
-			KS1s5hnj4jqavi6kBZrnshviuPI0dmy3w9OxZJe8QqQ=
+			gmeaoI/y33EwTnJWG9FYcEvPVxpbSdaIRJpoXvN2dYo=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5bNGnYj6PsP4DoM/Q1JrVnrc15Y=
+			qJrq6a01/OOamuqRvpE7271XxE8=
 			</data>
 			<key>hash2</key>
 			<data>
-			PxekmM0KI1VlxZnQmsLFBj5o7WXlI5cHKixtff2kSyE=
+			+qJkL3k7GDGLMOgjKwRmW6sOedk9S98GacUP9ZOA8qk=
 			</data>
 		</dict>
 		<key>Modules/FastcheckoutKit.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l/Hh+qA3S6aqlmAVwfmHEZklDjg=
+			RRzX84bAaD9rF0bwB5KbUrF+9F0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6nh93RUZn2toPI7BW8iPydHD7KpDF+Wz90dWFvP/51o=
+			FZEeyqeqr9Q3woIgDevIOnMK+X4iI4HQm/9o2q1D0kw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -353,11 +327,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AB+U/j8Kp1+EkWfu237c6o6xdgM=
+			tDkAMXpqGC5fnYohkaVFRBiMNX8=
 			</data>
 			<key>hash2</key>
 			<data>
-			CSPfl8EiFfMctxZ/pHyBvIARKouCz3rJWhyMYo0CWhk=
+			qUTeQIBd7OIq8vpvqu2nSuGDShKKrII7DGN2LbDrpYc=
 			</data>
 		</dict>
 		<key>msp.cer</key>
@@ -369,6 +343,17 @@
 			<key>hash2</key>
 			<data>
 			rlJxzlElr31D18HXt+qBEmtCASa7pWYRY5cg00Bnchw=
+			</data>
+		</dict>
+		<key>msp2.cer</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PxdXWItiuN8rIbGfI58eTPMUyHs=
+			</data>
+			<key>hash2</key>
+			<data>
+			Axd7EhUrA9YMw6Hx92OcPqelv+8IRSl4XxT0JRoPpY8=
 			</data>
 		</dict>
 	</dict>
