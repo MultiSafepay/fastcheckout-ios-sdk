@@ -1,14 +1,17 @@
-# CHANGELOG
-All notable changes to this project will be documented in this file.
+# Changelog
 
-## 1.2.5 - 8-04-2020
-* Bugfixes and minor improvements
+### 1.4.0
+* Xcode 12.4 support
+* Bugfixes and improvements
 
-## 1.1.0 - 16-10-2019
+*Released: 08/02/2021*
+
+### 1.1.0
 * Xcode 11 support
 * Add support to XCFrameworks
 * Bugfixes and improvements
 
-## 1.0.0 - 16-05-2019
-### Added
-Initial version
+*Released: 16/10/2019*
+
+### 1.0.0
+*Released: 16/05/2019*
