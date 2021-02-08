@@ -1,13 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutComponentsKit/Common/Views/PagedSlider.swift",
-      "line": null,
-      "symbol": "PagedSliderDelegate",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Analytics/Analytics.swift",
       "line": 56,
       "symbol": "AnalyticsEvent.init(type:name:parameters:)",
@@ -26,6 +19,27 @@
       "line": 83,
       "symbol": "ErrorAnalyticsEvent.init(type:reason:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/OrderInfo.swift",
+      "line": 52,
+      "symbol": "OrderInfo.PaymentMethod",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/OrderInfo.swift",
+      "line": 66,
+      "symbol": "OrderInfo.Balance",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/OrderInfo.swift",
+      "line": 79,
+      "symbol": "OrderInfo.User",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -72,23 +86,23 @@
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/FastcheckoutClient.swift",
-      "line": 205,
-      "symbol": "Environment.baseURL()",
+      "line": 224,
+      "symbol": "Environment.fcoAPIBaseURL()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/FastcheckoutClient.swift",
-      "line": 209,
-      "symbol": "Environment.host",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "line": 228,
+      "symbol": "Environment.jsonAPIBaseURL()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": null,
-      "symbol": "OrderStatus",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/FastcheckoutClient.swift",
+      "line": 232,
+      "symbol": "Environment.host",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -135,72 +149,86 @@
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": 19,
+      "line": 17,
+      "symbol": "ConsumerStatus.undefined",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
+      "line": 20,
       "symbol": "ShippingStatus",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "ShippingStatus.empty",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "ShippingStatus.shipped",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "ShippingStatus.delivered",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": 23,
+      "line": 24,
       "symbol": "ShippingStatus.undefined",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": 26,
+      "line": 27,
       "symbol": "OrderStatus",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": 28,
+      "line": 29,
       "symbol": "OrderStatus.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": 29,
+      "line": 30,
       "symbol": "OrderStatus.shipping",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": 31,
+      "line": 32,
       "symbol": "OrderStatus.init(type:shipping:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
-      "line": 36,
+      "line": 37,
       "symbol": "OrderStatus.copy(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/OrderStatus.swift",
+      "line": 42,
+      "symbol": "OrderStatus",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -260,15 +288,22 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Settings.swift",
+      "line": 61,
+      "symbol": "Settings.inAppBrowser",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/UserSession.swift",
-      "line": 312,
+      "line": 313,
       "symbol": "UserSession.wishlist(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/UserSession.swift",
-      "line": 328,
+      "line": 329,
       "symbol": "UserSession.setWishlist(_:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -290,49 +325,63 @@
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
       "line": 13,
-      "symbol": "Wish.siteId",
+      "symbol": "Wish.appId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
       "line": 14,
-      "symbol": "Wish.name",
+      "symbol": "Wish.siteId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
       "line": 15,
-      "symbol": "Wish.desc",
+      "symbol": "Wish.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
       "line": 16,
-      "symbol": "Wish.url",
+      "symbol": "Wish.desc",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
       "line": 17,
+      "symbol": "Wish.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
+      "line": 18,
       "symbol": "Wish.imageURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Public/Wish.swift",
-      "line": 28,
-      "symbol": "Wish.init(id:siteId:name:desc:url:imageURL:)",
+      "line": 30,
+      "symbol": "Wish.init(id:siteId:appId:name:desc:url:imageURL:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/User.swift",
-      "line": null,
-      "symbol": "User",
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Support.swift",
+      "line": 99,
+      "symbol": "SupportInfoItem.Accordion",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Models/Support.swift",
+      "line": 114,
+      "symbol": "SupportInfoItem.Link",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
@@ -351,20 +400,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Networking/FastcheckoutRouter.swift",
-      "line": null,
-      "symbol": "FastcheckoutRouter",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutCoreKit/Networking/Router.swift",
-      "line": null,
-      "symbol": "Router",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutKit/Common/Models/FastcheckoutManager.swift",
       "line": 34,
       "symbol": "CompletionCallback",
@@ -373,16 +408,9 @@
     },
     {
       "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutKit/Common/Models/FastcheckoutManager.swift",
-      "line": 183,
+      "line": 189,
       "symbol": "FastcheckoutManager.setAnalyticsDelegate(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/developer/Documents/MultiSafepay/Frameworks/sdk-ios/FastcheckoutKit/FastcheckoutKit/Scenes/Payment/PaymentModel.swift",
-      "line": null,
-      "symbol": "PaymentModel",
-      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     }
   ],
