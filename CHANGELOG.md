@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.4.1
+* Bugfixes
+*Released: 18/05/2021*
+
 ### 1.4.0
 * Xcode 12.4 support
 * Bugfixes and improvements
