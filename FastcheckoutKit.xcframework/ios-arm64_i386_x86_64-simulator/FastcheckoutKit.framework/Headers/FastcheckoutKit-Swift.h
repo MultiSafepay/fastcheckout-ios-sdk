@@ -1028,7 +1028,7 @@ SWIFT_CLASS_NAMED("Settings")
 /// Valid values are: <em>FastcheckoutLiveEnvironment</em> or <em>FastcheckoutTestEnvironment</em>
 @property (nonatomic, copy) NSString * _Nonnull environmentKey;
 /// A key that describes the if the merchant is going Fastcheckout or Connect API
-/// Default is <em><em>false</em></em>
+/// Default is <em><em>true</em></em>
 @property (nonatomic) BOOL anonymous;
 /// Specify the app name that will be shown in the navigation bar
 @property (nonatomic, copy) NSString * _Nullable appName;
@@ -2501,7 +2501,7 @@ SWIFT_CLASS_NAMED("Settings")
 /// Valid values are: <em>FastcheckoutLiveEnvironment</em> or <em>FastcheckoutTestEnvironment</em>
 @property (nonatomic, copy) NSString * _Nonnull environmentKey;
 /// A key that describes the if the merchant is going Fastcheckout or Connect API
-/// Default is <em><em>false</em></em>
+/// Default is <em><em>true</em></em>
 @property (nonatomic) BOOL anonymous;
 /// Specify the app name that will be shown in the navigation bar
 @property (nonatomic, copy) NSString * _Nullable appName;
@@ -3974,7 +3974,7 @@ SWIFT_CLASS_NAMED("Settings")
 /// Valid values are: <em>FastcheckoutLiveEnvironment</em> or <em>FastcheckoutTestEnvironment</em>
 @property (nonatomic, copy) NSString * _Nonnull environmentKey;
 /// A key that describes the if the merchant is going Fastcheckout or Connect API
-/// Default is <em><em>false</em></em>
+/// Default is <em><em>true</em></em>
 @property (nonatomic) BOOL anonymous;
 /// Specify the app name that will be shown in the navigation bar
 @property (nonatomic, copy) NSString * _Nullable appName;
