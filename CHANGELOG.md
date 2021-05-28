@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.4.3
+* Bugfix anonymous checkout issue
+*Released: 28/05/2021*
+
 ### 1.4.2
 * Bugfixes (anonymous checkout)
 *Released: 26/05/2021*
