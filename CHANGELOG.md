@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.4.4
+* Disable by default SSL Pinning
+* Update SSL certificates 
+*Released: 17/03/2022*
+
 ### 1.4.3
 * Bugfix anonymous checkout issue
 *Released: 28/05/2021*
