@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FastcheckoutKit
 @_exported import FastcheckoutKit
 import Foundation
@@ -9,16 +9,16 @@ import Security
 import Swift
 import UIKit
 import WebKit
+import _Concurrency
 @_hasMissingDesignatedInitializers @objc(FCOMerchantDetails) final public class MerchantDetails : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let name: Swift.String
   @objc final public let site: FastcheckoutKit.Site
   @objc final public let email: Swift.String?
   @objc final public let phone: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension MerchantDetails : Swift.Decodable {
+extension FastcheckoutKit.MerchantDetails : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @objc(FCOAnalyticsEventType) public enum AnalyticsEventType : Swift.Int {
@@ -53,7 +53,6 @@ extension MerchantDetails : Swift.Decodable {
   @objc final public let parameters: [Swift.String : Swift.AnyObject]?
   @objc public init(type: FastcheckoutKit.AnalyticsEventType, name: Swift.String, parameters: [Swift.String : Swift.AnyObject]?)
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(FCOErrorAnalyticsEvent) final public class ErrorAnalyticsEvent : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -61,7 +60,6 @@ extension MerchantDetails : Swift.Decodable {
   @objc final public let reason: Swift.String
   @objc public init(type: FastcheckoutKit.ErrorAnalyticsEventType, reason: Swift.String)
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(FCOAnalyticsDelegate) public protocol AnalyticsDelegate {
@@ -74,7 +72,6 @@ extension MerchantDetails : Swift.Decodable {
   @objc final public let message: Swift.String
   @objc final public let transactionId: Swift.String
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(FCOColors) final public class Colors : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -85,14 +82,12 @@ extension MerchantDetails : Swift.Decodable {
   @objc final public let backgroundColor: UIKit.UIColor
   @objc public init(primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor, primaryTextColor: UIKit.UIColor, secondaryTextColor: UIKit.UIColor, backgroundColor: UIKit.UIColor)
   @objc final public func copy(with zone: ObjectiveC.NSZone?) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(FCODeviceInfo) final public class DeviceInfo : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let token: Swift.String
   @objc final public let os: Swift.String
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(FCOUserSessionDelegate) public protocol UserSessionDelegate {
@@ -105,50 +100,48 @@ extension MerchantDetails : Swift.Decodable {
   }
   @objc deinit
   @discardableResult
-  @objc final public func balance(completion: @escaping (FastcheckoutKit.Balance?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func balance(completion: @escaping (_ balance: FastcheckoutKit.Balance?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func orders(from start: Swift.Int, count: Swift.Int, completion: @escaping ([FastcheckoutKit.OrderSummary]?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func orders(from start: Swift.Int, count: Swift.Int, completion: @escaping (_ orders: [FastcheckoutKit.OrderSummary]?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func orderDetails(id: Swift.String, completion: @escaping (FastcheckoutKit.OrderDetails?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func orderDetails(id: Swift.String, completion: @escaping (_ orderDetails: FastcheckoutKit.OrderDetails?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func shippingAddresses(completion: @escaping ([FastcheckoutKit.ShippingAddress]?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func shippingAddresses(completion: @escaping (_ addresses: [FastcheckoutKit.ShippingAddress]?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func deleteShippingAddress(id: Swift.String, completion: @escaping ([FastcheckoutKit.ShippingAddress]?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func deleteShippingAddress(id: Swift.String, completion: @escaping (_ addresses: [FastcheckoutKit.ShippingAddress]?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @objc final public func userInfo() -> FastcheckoutKit.UserInfo?
   @discardableResult
-  @objc final public func invitation(completion: @escaping (FastcheckoutKit.Invitation?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func invitation(completion: @escaping (_ invitation: FastcheckoutKit.Invitation?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @objc final public func biometricAuthenticationStatus() -> FastcheckoutKit.BiometricAuthenticationStatus
   @objc final public func setBiometricAuthentication(enabled: Swift.Bool) -> FastcheckoutKit.BiometricAuthenticationStatus
   @discardableResult
-  @objc final public func wishlist(completion: @escaping ([FastcheckoutKit.Wish]?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func wishlist(completion: @escaping (_ wishlist: [FastcheckoutKit.Wish]?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func setWishlist(_ wishlist: [FastcheckoutKit.Wish], completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func setWishlist(_ wishlist: [FastcheckoutKit.Wish], completion: @escaping (_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func messages(from start: Swift.Int, count: Swift.Int, filterBy filter: FastcheckoutKit.MessagesFilter = .inbox, completion: @escaping ([FastcheckoutKit.Message]?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func messages(from start: Swift.Int, count: Swift.Int, filterBy filter: FastcheckoutKit.MessagesFilter = .inbox, completion: @escaping (_ messages: [FastcheckoutKit.Message]?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func messageDetails(id: Swift.String, completion: @escaping (FastcheckoutKit.MessageDetails?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func messageDetails(id: Swift.String, completion: @escaping (_ details: FastcheckoutKit.MessageDetails?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func unreadMessages(filterBy filter: FastcheckoutKit.MessagesFilter = .inbox, completion: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func unreadMessages(filterBy filter: FastcheckoutKit.MessagesFilter = .inbox, completion: @escaping (_ count: Swift.Int, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func markAsRead(id: Swift.String, read: Swift.Bool, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func markAsRead(id: Swift.String, read: Swift.Bool, completion: @escaping (_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func deleteMessage(id: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func deleteMessage(id: Swift.String, completion: @escaping (_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func replyMessage(parentId id: Swift.String, content: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func replyMessage(parentId id: Swift.String, content: Swift.String, completion: @escaping (_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func paymentMethods(completion: @escaping ([FastcheckoutKit.PaymentMethod]?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc final public func paymentMethods(completion: @escaping (_ methods: [FastcheckoutKit.PaymentMethod]?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
   @discardableResult
-  @objc final public func deletePaymentMethod(id: Swift.String, completion: @escaping ([FastcheckoutKit.PaymentMethod]?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
-  @objc override dynamic public init()
+  @objc final public func deletePaymentMethod(id: Swift.String, completion: @escaping (_ methods: [FastcheckoutKit.PaymentMethod]?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
 }
 @_hasMissingDesignatedInitializers @objc(FCOBalance) final public class Balance : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let amount: Swift.String
   @objc final public let value: Swift.Double
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension Balance : Swift.Decodable {
+extension FastcheckoutKit.Balance : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc(FCOOrderItem) final public class OrderItem : ObjectiveC.NSObject {
@@ -158,10 +151,9 @@ extension Balance : Swift.Decodable {
   @objc final public let quantity: Swift.String
   @objc final public let image: Foundation.URL?
   @objc final public let url: Foundation.URL?
-  @objc override dynamic public init()
   @objc deinit
 }
-extension OrderItem : Swift.Decodable {
+extension FastcheckoutKit.OrderItem : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @objc(FCOWish) final public class Wish : ObjectiveC.NSObject, Swift.Codable {
@@ -174,17 +166,15 @@ extension OrderItem : Swift.Decodable {
   @objc final public let imageURL: Foundation.URL?
   @objc public init(id: Swift.String, siteId: Swift.String, appId: Swift.String, name: Swift.String, desc: Swift.String?, url: Foundation.URL, imageURL: Foundation.URL?)
   public init(from decoder: Swift.Decoder) throws
-  @objc override dynamic public init()
   @objc deinit
   final public func encode(to encoder: Swift.Encoder) throws
 }
 public typealias CancelClosure = () -> Swift.Void
 @_hasMissingDesignatedInitializers @objc(FCODebitcardType) final public class DebitcardType : FastcheckoutKit.CardType {
   @objc final public let iban: Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
-extension RawRepresentable where Self.RawValue : Swift.Hashable {
+extension Swift.RawRepresentable where Self.RawValue : Swift.Hashable {
   public var hashValue: Swift.Int {
     get
   }
@@ -194,7 +184,6 @@ extension RawRepresentable where Self.RawValue : Swift.Hashable {
   @objc final public let holder: Swift.String
   @objc final public let type: FastcheckoutKit.CardType
   @objc final public let style: FastcheckoutKit.PaymentMethodCardStyle
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(FCOShippingAddress) final public class ShippingAddress : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -213,10 +202,9 @@ extension RawRepresentable where Self.RawValue : Swift.Hashable {
   @objc final public let alias: Swift.String?
   @objc final public let isDefault: Swift.Bool
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension ShippingAddress : Swift.Decodable {
+extension FastcheckoutKit.ShippingAddress : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @objc(FCOConsumerStatus) public enum ConsumerStatus : Swift.Int {
@@ -248,10 +236,9 @@ extension ShippingAddress : Swift.Decodable {
   @objc final public let shipping: FastcheckoutKit.ShippingStatus
   @objc public init(type: FastcheckoutKit.ConsumerStatus, shipping: FastcheckoutKit.ShippingStatus)
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension OrderStatus : Swift.Decodable {
+extension FastcheckoutKit.OrderStatus : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc(FCOOrderDetails) final public class OrderDetails : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -268,10 +255,9 @@ extension OrderStatus : Swift.Decodable {
   @objc final public let total: Swift.String
   @objc final public let cashback: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension OrderDetails : Swift.Decodable {
+extension FastcheckoutKit.OrderDetails : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc(FCOPaymentMethodCardStyle) final public class PaymentMethodCardStyle : ObjectiveC.NSObject, Swift.Decodable {
@@ -279,7 +265,6 @@ extension OrderDetails : Swift.Decodable {
   @objc final public let color: UIKit.UIColor
   @objc final public let textColor: UIKit.UIColor
   public init(from decoder: Swift.Decoder) throws
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(FCOMessagesFilter) public enum MessagesFilter : Swift.Int {
@@ -304,7 +289,7 @@ extension OrderDetails : Swift.Decodable {
 public protocol ExecutionContext {
   func execute(_ work: @escaping () -> Swift.Void)
 }
-extension DispatchQueue : FastcheckoutKit.ExecutionContext {
+extension Dispatch.DispatchQueue : FastcheckoutKit.ExecutionContext {
   public func execute(_ work: @escaping () -> Swift.Void)
 }
 final public class InvalidatableQueue : FastcheckoutKit.ExecutionContext {
@@ -317,7 +302,7 @@ final public class Promise<Value> {
   public init()
   public init(value: Value)
   public init(error: Swift.Error)
-  convenience public init(queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .userInitiated), work: @escaping (@escaping (Value) -> Swift.Void, @escaping (Swift.Error) -> Swift.Void) throws -> Swift.Void)
+  convenience public init(queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .userInitiated), work: @escaping (_ fulfill: @escaping (Value) -> Swift.Void, _ reject: @escaping (Swift.Error) -> Swift.Void) throws -> Swift.Void)
   @discardableResult
   final public func then<NewValue>(on queue: FastcheckoutKit.ExecutionContext = DispatchQueue.main, _ onFulfilled: @escaping (Value) throws -> FastcheckoutKit.Promise<NewValue>) -> FastcheckoutKit.Promise<NewValue>
   @discardableResult
@@ -349,10 +334,9 @@ final public class Promise<Value> {
   @objc final public let name: Swift.String
   @objc final public let url: Foundation.URL
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension Site : Swift.Decodable {
+extension FastcheckoutKit.Site : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc(FCOShippingDetails) final public class ShippingDetails : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -362,20 +346,18 @@ extension Site : Swift.Decodable {
   @objc final public let trackingId: Swift.String?
   @objc final public let comment: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension ShippingDetails : Swift.Decodable {
+extension FastcheckoutKit.ShippingDetails : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc(FCOReferrerDetails) final public class ReferrerDetails : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public let id: Swift.String
   @objc final public let email: Swift.String
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension ReferrerDetails : Swift.Decodable {
+extension FastcheckoutKit.ReferrerDetails : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc(FCOMessage) final public class Message : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -385,10 +367,9 @@ extension ReferrerDetails : Swift.Decodable {
   @objc final public let readAt: Foundation.Date?
   @objc final public let transactionId: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension Message : Swift.Decodable {
+extension FastcheckoutKit.Message : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc(FCOMessageDetails) final public class MessageDetails : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -403,10 +384,9 @@ extension Message : Swift.Decodable {
   @objc final public let relatedOrder: FastcheckoutKit.Order?
   @objc final public let canReply: Swift.Bool
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension MessageDetails : Swift.Decodable {
+extension FastcheckoutKit.MessageDetails : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc(FCOOrder) final public class Order : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -416,10 +396,9 @@ extension MessageDetails : Swift.Decodable {
   @objc final public let amount: Swift.String
   @objc final public let newTransactionId: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension Order : Swift.Decodable {
+extension FastcheckoutKit.Order : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc(FCOCardType) public class CardType : ObjectiveC.NSObject {
@@ -429,12 +408,10 @@ extension Order : Swift.Decodable {
 @_hasMissingDesignatedInitializers @objc(FCOCreditcardType) final public class CreditcardType : FastcheckoutKit.CardType {
   @objc final public let number: Swift.String
   @objc final public let expiryDate: Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(FCOPayAfterDeliveryType) final public class PayAfterDeliveryType : FastcheckoutKit.CardType {
   @objc final public let birthdate: Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(FCOInvitation) final public class Invitation : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -444,10 +421,9 @@ extension Order : Swift.Decodable {
   @objc final public let subject: Swift.String
   @objc final public let link: Foundation.URL
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension Invitation : Swift.Decodable {
+extension FastcheckoutKit.Invitation : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 @objc(FCOCoreSettings) final public class Settings : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -465,7 +441,6 @@ extension Invitation : Swift.Decodable {
   @objc public init(environment: Swift.String, debug: Swift.Bool, biometricAuthenticationEnabled: Swift.Bool, persistUserSession: Swift.Bool, skipShowCartAtBeginning: Swift.Bool, pinning: Swift.Bool, anonymous: Swift.Bool)
   @objc public static func build() -> FastcheckoutKit.Settings
   @objc final public func copy(with zone: ObjectiveC.NSZone?) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(FCOShippingAddressesDelegate) public protocol ShippingAddressesDelegate {
@@ -475,37 +450,36 @@ extension Invitation : Swift.Decodable {
 @objc(FCOPaymentMethodsDelegate) public protocol PaymentMethodsDelegate {
   @objc func fastcheckoutDidRequestGoShopping()
 }
-public typealias CompletionCallback = (FastcheckoutKit.Status?, Foundation.NSError?) -> Swift.Void
+public typealias CompletionCallback = (_ status: FastcheckoutKit.Status?, _ error: Foundation.NSError?) -> Swift.Void
 @objc(FCOFastcheckoutManager) public class FastcheckoutManager : ObjectiveC.NSObject {
   @objc final public let client: FastcheckoutKit.FastcheckoutClient
   @objc public var modalPresentationStyle: UIKit.UIModalPresentationStyle
   @objc public init(client: FastcheckoutKit.FastcheckoutClient, colors: FastcheckoutKit.Colors? = nil)
   @objc deinit
-  @objc override dynamic public init()
 }
-extension FastcheckoutManager {
+extension FastcheckoutKit.FastcheckoutManager {
   @objc dynamic public func startCheckout(transactionId: Swift.String, host hostViewController: UIKit.UIViewController, onCompletion: @escaping FastcheckoutKit.CompletionCallback)
   @discardableResult
   @objc dynamic public func startCheckout(json: [Swift.String : Any], host hostViewController: UIKit.UIViewController, onCompletion: @escaping FastcheckoutKit.CompletionCallback) -> FastcheckoutKit.CancelClosure?
   @objc dynamic public func validateCheckout(id: Swift.String) -> Swift.Bool
 }
-extension FastcheckoutManager {
+extension FastcheckoutKit.FastcheckoutManager {
   @objc dynamic public func setAnalyticsDelegate(_ analyticsDelegate: FastcheckoutKit.AnalyticsDelegate?)
 }
-extension FastcheckoutManager {
+extension FastcheckoutKit.FastcheckoutManager {
   @objc dynamic public func login(host hostViewController: UIKit.UIViewController, onCompletion: (() -> Swift.Void)?)
   @objc dynamic public func login(email: Swift.String, host hostViewController: UIKit.UIViewController, onCompletion: (() -> Swift.Void)?)
   @objc dynamic public func login(provider: FastcheckoutKit.SocialProvider, accessToken: Swift.String, host hostViewController: UIKit.UIViewController, onCompletion: (() -> Swift.Void)?)
   @objc dynamic public func logout()
 }
-extension FastcheckoutManager {
+extension FastcheckoutKit.FastcheckoutManager {
   @objc dynamic public func startSupport() -> UIKit.UINavigationController
   @objc dynamic public func startSupport(forOrder order: Swift.String) -> UIKit.UINavigationController
 }
-extension FastcheckoutManager {
+extension FastcheckoutKit.FastcheckoutManager {
   @objc dynamic public func paymentMethodsUI(delegate: FastcheckoutKit.PaymentMethodsDelegate) throws -> UIKit.UIViewController
 }
-extension FastcheckoutManager {
+extension FastcheckoutKit.FastcheckoutManager {
   @objc dynamic public func addAddressUI(delegate: FastcheckoutKit.ShippingAddressesDelegate?) throws -> UIKit.UINavigationController
   @objc dynamic public func editAddressUI(id: Swift.String, delegate: FastcheckoutKit.ShippingAddressesDelegate?) throws -> UIKit.UINavigationController
   @objc dynamic public func editUserProfileUI() throws -> UIKit.UIViewController
@@ -522,7 +496,7 @@ public enum Promises {
   public static func zip<T1, T2, T3>(_ p1: FastcheckoutKit.Promise<T1>, _ p2: FastcheckoutKit.Promise<T2>, _ last: FastcheckoutKit.Promise<T3>) -> FastcheckoutKit.Promise<(T1, T2, T3)>
   public static func zip<T1, T2, T3, T4>(_ p1: FastcheckoutKit.Promise<T1>, _ p2: FastcheckoutKit.Promise<T2>, _ p3: FastcheckoutKit.Promise<T3>, _ last: FastcheckoutKit.Promise<T4>) -> FastcheckoutKit.Promise<(T1, T2, T3, T4)>
 }
-extension Promise {
+extension FastcheckoutKit.Promise {
   final public func addTimeout(_ timeout: Foundation.TimeInterval) -> FastcheckoutKit.Promise<Value>
   @discardableResult
   final public func always(on queue: FastcheckoutKit.ExecutionContext = DispatchQueue.main, _ onComplete: @escaping () -> Swift.Void) -> FastcheckoutKit.Promise<Value>
@@ -534,14 +508,13 @@ extension Promise {
   @objc final public let userSession: FastcheckoutKit.UserSession
   @objc final public let deviceInfo: FastcheckoutKit.DeviceInfo
   @objc deinit
-  @objc public init(apiKey: Swift.String, settings: FastcheckoutKit.Settings? = nil)
-  @objc override dynamic public init()
+  @objc public init(apiKey: Swift.String?, settings: FastcheckoutKit.Settings? = nil)
 }
-extension FastcheckoutClient {
+extension FastcheckoutKit.FastcheckoutClient {
   @discardableResult
-  @objc dynamic public func referrerDetails(referrer: Swift.String, completion: @escaping (FastcheckoutKit.ReferrerDetails?, Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
+  @objc dynamic public func referrerDetails(referrer: Swift.String, completion: @escaping (_ details: FastcheckoutKit.ReferrerDetails?, _ error: Foundation.NSError?) -> Swift.Void) -> FastcheckoutKit.CancelClosure?
 }
-extension FastcheckoutClient {
+extension FastcheckoutKit.FastcheckoutClient {
   @objc dynamic public func setPushNotifications(deviceToken: Foundation.Data)
   @objc dynamic public func setPushNotifications(deviceToken: Foundation.Data, firebaseToken: Swift.String)
 }
@@ -590,7 +563,6 @@ public enum Environment : Swift.Int {
   @objc final public let referral: Swift.String?
   @objc final public let cashback: Swift.String?
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(FCOOrderSummary) final public class OrderSummary : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -601,10 +573,9 @@ public enum Environment : Swift.Int {
   @objc final public let newTransactionId: Swift.String?
   @objc final public let status: FastcheckoutKit.OrderStatus
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
-extension OrderSummary : Swift.Decodable {
+extension FastcheckoutKit.OrderSummary : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
 extension FastcheckoutKit.AnalyticsEventType : Swift.Equatable {}
