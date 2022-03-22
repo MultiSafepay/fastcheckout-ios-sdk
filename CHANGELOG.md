@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.4.6
+* Lock XCFramwork to Xcode 12.0
+
+*Released: 22/03/2022*
+
 ### 1.4.5
 * Fix XCFramework Xcode version locking issue
 *Released: 22/03/2022*

@@ -8,7 +8,7 @@ By storing and re-using data it is the fastest checkout process available for sh
 ## About MultiSafepay ##
 MultiSafepay is a collecting payment service provider which means we take care of the agreements, technical details and payment collection required for each payment method. You can start selling online today and manage all your transactions from one place.
 ## Requirements
-- Xcode 12.0 and iOS 15 SDK
+- Xcode 12.0 and iOS 14 SDK
 - iOS 9+ target
 - Swift 5.3
 ## Installation
