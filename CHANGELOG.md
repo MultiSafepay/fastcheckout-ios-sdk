@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.4.5
+* Fix XCFramework Xcode version locking issue
+*Released: 22/03/2022*
+
 ### 1.4.4
 * Disable by default SSL Pinning
 * Update SSL certificates 
